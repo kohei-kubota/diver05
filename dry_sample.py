@@ -14,3 +14,13 @@ compare_age()
 compare_age(29, 29)
 compare_age("40", "40")
 compare_age("this", "that")
+
+
+# num = "10"
+# if isinstance(num, str):
+#     try:
+#         print(int(num))
+#     except ValueError:
+#         print("")
+# else:
+#     print(num)
