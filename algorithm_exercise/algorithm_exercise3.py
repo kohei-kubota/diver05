@@ -1,8 +1,12 @@
 def sort(*args):
+    arr = list(args)
     arr = []
     for j in args:
         for l in j:
+            if isinstance(l,int):
+                l = str(l)
             arr.append(l)
+
     k = 0
     w = 0
     i = len(arr) - 1
@@ -27,4 +31,6 @@ def sort(*args):
 sample_list = ['a', 'b', 'c']
 print(sort(sample_list))
 sample_list = [1, 2, 3]
+print(sort(sample_list))
+sample_list = [1, 2, 3,'a', 'b', 'c']
 print(sort(sample_list))
